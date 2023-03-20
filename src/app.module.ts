@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { SequelizeModule } from '@nestjs/sequelize';
 import { StatusModule } from './status/status.module';
+import { CurrencyTypeModule } from './currency_type/currency_type.module';
 
 @Module({
   imports: [
@@ -26,6 +27,8 @@ import { StatusModule } from './status/status.module';
 
     // Custom modules
     StatusModule,
+
+    CurrencyTypeModule,
   ],
 })
 export class AppModule {}
