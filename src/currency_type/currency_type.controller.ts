@@ -13,7 +13,7 @@ import { CreateCurrencyTypeDto } from './dto/create-currency_type.dto';
 import { UpdateCurrencyTypeDto } from './dto/update-currency_type.dto';
 import { CurrencyType } from './entity/currency_type.entity';
 
-@ApiTags('Payment Method')
+@ApiTags('Currency Type')
 @Controller('currency-type')
 export class CurrencyTypeController {
   constructor(private readonly CurrencyType: CurrencyTypeService) {}

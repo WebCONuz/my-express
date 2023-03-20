@@ -3,6 +3,7 @@ import { ConfigModule } from '@nestjs/config';
 import { SequelizeModule } from '@nestjs/sequelize';
 import { StatusModule } from './status/status.module';
 import { CurrencyTypeModule } from './currency_type/currency_type.module';
+import { OrderModule } from './order/order.module';
 
 @Module({
   imports: [
@@ -29,6 +30,8 @@ import { CurrencyTypeModule } from './currency_type/currency_type.module';
     StatusModule,
 
     CurrencyTypeModule,
+
+    OrderModule,
   ],
 })
 export class AppModule {}
